@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quizmania</string>
+    <string name="Question">What is the IEEE standard for Wireless LAN?</string>
+    <string name="QuestionNo">#1</string>
+    <string name="NextBut">Next</string>
+    <string name="optionIcon">Icon for Options</string>
+    <string name="optionA">IEEE 802.15</string>
+    <string name="optionB">IEEE 802.11</string>
+    <string name="optionC">IEEE 802.3</string>
+    <string name="optionD">IEEE 802.5</string>
+    <string name="launchImage">Launch Image</string>
+    <string name="pick_topic">Pick a Topic!</string>
+    <string name="topic1">Topic1</string>
+    <string name="topic2">Topic2</string>
+    <string name="topic3">Topic3</string>
+    <string name="topic4">Topic4</string>
+</resources>

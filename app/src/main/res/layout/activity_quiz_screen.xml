@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.novices.quizscreen.QuizScreen">
+
+    <TextView
+        android:id="@+id/QuestionNo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval"
+        android:elevation="10dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="@string/QuestionNo"
+        android:textColor="#2E7D32"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/vertical_bar_1"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:background="#ffffff" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ffffff"
+        card_view:cardCornerRadius="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/Question"
+                android:textColor="#2E7D32" />
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/vertical_bar_2"
+        android:layout_width="8dp"
+        android:layout_height="@dimen/activity_vertical_margin"
+        android:layout_gravity="end"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:background="#ffffff" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/optionIcon"
+                        android:src="@drawable/ic_label_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/optionA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/activity_vertical_margin"
+                        android:paddingStart="@dimen/activity_vertical_margin"
+                        android:paddingTop="12dp"
+                        android:text="@string/optionA"
+                        android:textColor="#2E7D32" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/optionIcon"
+                        android:src="@drawable/ic_label_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/optionB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/activity_vertical_margin"
+                        android:paddingStart="@dimen/activity_vertical_margin"
+                        android:paddingTop="12dp"
+                        android:text="@string/optionB"
+                        android:textColor="#2E7D32" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/optionIcon"
+                        android:src="@drawable/ic_label_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/optionC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/activity_vertical_margin"
+                        android:paddingStart="@dimen/activity_vertical_margin"
+                        android:paddingTop="12dp"
+                        android:text="@string/optionC"
+                        android:textColor="#2E7D32" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/optionIcon"
+                        android:src="@drawable/ic_label_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/optionD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/activity_vertical_margin"
+                        android:paddingStart="@dimen/activity_vertical_margin"
+                        android:paddingTop="12dp"
+                        android:text="@string/optionD"
+                        android:textColor="#2E7D32" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/vertical_bar_3"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/NextButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:background="@drawable/oval"
+        android:contentDescription="@string/NextBut"
+        android:src="@drawable/ic_navigate_next_black_24dp" />
+</LinearLayout>
