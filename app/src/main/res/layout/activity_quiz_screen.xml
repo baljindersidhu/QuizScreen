@@ -36,7 +36,6 @@
         android:background="#ffffff" />
 
     <android.support.v7.widget.CardView
-        android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -50,6 +49,7 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin">
 
             <TextView
+                android:id="@+id/question"
                 style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,10 +95,12 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btnOptA"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/optionIcon"
-                        android:src="@drawable/ic_label_black_24dp" />
+                        android:src="@drawable/ic_label_black_24dp"
+                        android:onClick="aClicked"/>
 
                     <TextView
                         android:id="@+id/optionA"
@@ -118,10 +120,12 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btnOptB"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/optionIcon"
-                        android:src="@drawable/ic_label_black_24dp" />
+                        android:src="@drawable/ic_label_black_24dp"
+                        android:onClick="bClicked"/>
 
                     <TextView
                         android:id="@+id/optionB"
@@ -141,10 +145,12 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btnOptC"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/optionIcon"
-                        android:src="@drawable/ic_label_black_24dp" />
+                        android:src="@drawable/ic_label_black_24dp"
+                        android:onClick="cClicked"/>
 
                     <TextView
                         android:id="@+id/optionC"
@@ -164,10 +170,12 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/btnOptD"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/optionIcon"
-                        android:src="@drawable/ic_label_black_24dp" />
+                        android:src="@drawable/ic_label_black_24dp"
+                        android:onClick="dClicked"/>
 
                     <TextView
                         android:id="@+id/optionD"
@@ -203,5 +211,5 @@
         android:layout_marginLeft="@dimen/activity_vertical_margin"
         android:background="@drawable/oval"
         android:contentDescription="@string/NextBut"
-        android:src="@drawable/ic_navigate_next_black_24dp" />
+        android:src="@drawable/ic_navigate_next_black_24dp"/>
 </LinearLayout>
