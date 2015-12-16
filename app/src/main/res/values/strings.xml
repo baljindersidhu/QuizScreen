@@ -11,7 +11,7 @@
     <string name="launchImage">Launch Image</string>
     <string name="pick_topic">Pick a Topic!</string>
     <string name="topic1">Digital Electronics</string>
-    <string name="topic2">Topic2</string>
-    <string name="topic3">Topic3</string>
-    <string name="topic4">Topic4</string>
+    <string name="topic2">Data Structures</string>
+    <string name="topic3">Java</string>
+    <string name="topic4">Cloud Computing</string>
 </resources>

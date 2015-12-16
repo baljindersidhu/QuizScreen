@@ -56,21 +56,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/topic1" />
+                android:text="@string/topic1"
+                android:checked="false" />
 
             <RadioButton
                 android:id="@+id/topic2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/topic2" />
+                android:text="@string/topic2"
+                android:checked="false" />
 
             <RadioButton
                 android:id="@+id/topic3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/topic3" />
+                android:text="@string/topic3"
+                android:checked="false" />
 
             <RadioButton
                 android:id="@+id/topic4"
